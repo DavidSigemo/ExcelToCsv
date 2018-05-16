@@ -4,9 +4,7 @@ using System.Data;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using CsvHelper;
-using OfficeOpenXml;
 
 namespace ExcelToCsv
 {
@@ -14,7 +12,7 @@ namespace ExcelToCsv
     {
         static void Main(string[] args)
         {
-            string fileName = "APOmedfullrättArbetsställenGRuppdrumGDPR";
+            string fileName = "[input file name here]";
             FileInfo excelPath = new FileInfo($@"C:\ExcelToCsv\{fileName}.xlsx");
 
             if (excelPath.Directory != null)
